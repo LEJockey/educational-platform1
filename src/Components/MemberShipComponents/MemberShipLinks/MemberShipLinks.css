@@ -1,0 +1,16 @@
+.membership-links{
+    padding: 1.5rem .75rem;
+}
+.membership-links .member-link{
+    display: block;
+    color: var(--black-color);
+    text-decoration: none;
+    padding: .94rem .62rem;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .membership-links{
+        display: none;
+    }
+}

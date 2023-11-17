@@ -1,0 +1,77 @@
+/* Header Img */
+main .main-header{
+    width: 100%;
+    height: 98vh;
+    /* background-position: -252.759px 0px; */
+    background-size:  136.151% 100.399%;
+    /* background-size: 115% 100%;  */
+    background-position: center;
+    
+}
+
+/* Partners Home */
+.partner-home img{
+    width: auto !important;
+    height: auto !important;
+}
+
+.partner-home .row{
+    border-radius: 0.375rem;
+    background: var(--white-color);
+    box-shadow: 0px 0px 20px 10px rgba(95, 45, 237, 0.05);
+}
+
+.partner-home h1{
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+/* About Home */
+.about-home p{
+    text-align: justify;
+}
+
+.about-home button{
+    color: var(--black-color);
+}
+
+/* Evidence Home */
+.evidence-home h1{
+    font-size: 2.25rem !important;
+}
+
+.custom-padding{
+    padding: 0 2rem !important;
+}
+
+@media screen and (max-width:768px) {
+    .custom-padding{
+        padding: 0 1rem !important;
+    }
+    .about-home figure{
+        width: 100% !important;
+    }
+}
+
+/* Services Home */
+.service-home h1{
+    font-size: 2.25rem;
+}
+.service-home p{
+    font-size: 1.125rem;
+    margin-bottom: 5.5rem;
+}
+
+/* Teachers Home */
+.teachers-home h1{
+    margin-bottom: 5.5rem;
+}
+
+
+
+
+
