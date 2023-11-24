@@ -17,12 +17,28 @@ import { MdPhone } from "react-icons/md";
 import { BiSolidShow } from "react-icons/bi";
 import { BiHide } from "react-icons/bi";
 
+
 import "./SingleStepForm.css";
 
 
 const SingleStepForm = () => {
   // const baseURL = 'https://route-ecommerce.onrender.com'  // or 'https://route-ecommerce-app.vercel.app'
 
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    beforeChange: function(currentSlide, nextSlide) {
+      console.log("before change", currentSlide, nextSlide);
+    },
+    afterChange: function(currentSlide) {
+      console.log("after change", currentSlide);
+    }
+  };
   const { lang, langs } = useLangContext();
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -58,10 +74,7 @@ const SingleStepForm = () => {
     email: Yup.string()
       .required("Email is Required")
       .email("Invalid email address *exemple@yyy.zzz"),
-    password: Yup.string()
-      .required("Password is required")
-      .matches(
-        /^[A-Z][a-z0-9]{5,10}$/,
+    password: Yup.string().required("Password is required").matches(/^[A-Z][a-z0-9]{5,10}$/,
         "Password must start with Capital Letter includes at least 5 and less than 10 chars"
       ),
     rePassword: Yup.string()
@@ -91,15 +104,17 @@ const SingleStepForm = () => {
   async function resetPass(value) {
     setLoading(true);
     console.log(value);
+    console.log(`${value.resetCode1}${value.resetCode2}` )
     setLoading(false);
   }
 
   const isCodeComplete = () => {
-    for (let index = 1; index <= 4; index++) {
-        if (!formik1.values[`resetCode${index}`]) {
-        return false;
-        }
-    }
+      for (let index = 1; index <= 4; index++) {
+        
+          if (!formik1.values[`resetCode${index}`]) {
+          return false;
+          }
+      }
     return true;
   };
 

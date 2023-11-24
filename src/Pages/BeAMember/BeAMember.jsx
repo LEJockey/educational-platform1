@@ -1,15 +1,17 @@
 import React from 'react'
-import HeaderImg from '../../Components/HeaderImg/HeaderImg'
+import SidebarLinks from './../../Components/SidebarLinks/SidebarLinks';
 import MemeberShipTypes from '../../Components/MemberShipComponents/MemeberShipTypes/MemeberShipTypes'
 import JoinCommunity from '../../Components/MemberShipComponents/JoinCommunity/JoinCommunity'
-import MemberShipLinks from '../../Components/MemberShipComponents/MemberShipLinks/MemberShipLinks'
-import { membershipsPlans } from './../../data';
+import { memberShipLinks, membershipsPlans } from './../../data';
 import MemberShipPlan from '../../Components/MemberShipComponents/MemberShipPlan/MemberShipPlan'
-import './BeAMember.css'
 import BenefitsPlan from '../../Components/MemberShipComponents/BenefitsPlan/BenefitsPlan'
+import './BeAMember.css'
+
+
 
 const BeAMember = () => {
-  return (
+
+return (
 
     <>
     {/* Member Ship Img */}
@@ -25,8 +27,11 @@ const BeAMember = () => {
         <div className="row gy-4">
 
             <div className="col-xl-4 px-3 d-flex flex-column justify-content-between">
-                <MemeberShipTypes/> 
-                <MemberShipLinks/>
+
+                <MemeberShipTypes/>
+
+                <SidebarLinks links={memberShipLinks} />
+
             </div>
 
             <div className="col-xl-8 px-3">

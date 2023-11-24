@@ -21,7 +21,13 @@
     background: var(--gray-color);
 }
 
-.membership .member-type , .membership .join-community, .membership .membership-links, .membership .membership-plans{
+@media screen and (max-width: 768px) {
+    .membership{
+        padding: 1rem;
+    }
+}
+
+.membership .member-type , .membership .join-community, .membership .membership-plans{
     border-radius: 0.75rem;
     background: var(--white-color);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
@@ -45,7 +51,7 @@
 .membership .simple-icon {
     width: 1.00125rem;
     height: 1rem;  
-    color: #214A4A;
+    color: var(--darkgreen-color);
 }
 
 .membership .membership-plans{

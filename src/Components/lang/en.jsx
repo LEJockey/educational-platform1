@@ -55,7 +55,8 @@ export const en = {
         submit: 'Submit',
         send: 'Send',
         add: 'Add Comment',
-        comments: 'Comments'
+        comments: 'Comments',
+        search: 'Search'
     },
     Footer: {
         desc: 'Installation and supply of natural stone for palaces, villas and buildings - we prepare designs according to the appropriate dimensions of natural stone facades. We provide all types of natural stone using the latest methods used and guaranteed.',

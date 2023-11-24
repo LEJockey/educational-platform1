@@ -1,0 +1,44 @@
+.ass2-table{
+    margin-bottom: 2rem;
+    border: 1px solid #ACACAC ;
+}
+.ass2-table th{
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.125rem;
+    font-style: normal;
+    line-height: normal;
+    color: var(--darkgreen-color);
+}
+
+.ass2-table thead th{
+    padding: 1.5rem 1rem;
+}
+
+.ass2-table th div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ass2-table tbody th{
+    width: 25% !important;
+}
+
+.ass2-table tbody td{
+    padding: 1rem;
+}
+
+.ass2-table th .t-heading{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.ass2-table tr{
+    padding: .87rem .67rem;
+}
+
+

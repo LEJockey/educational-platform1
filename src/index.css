@@ -40,6 +40,10 @@ body {
   background-color: var(--green-color);
 }
 
+.darkgreen-color{
+  color: var(--darkgreen-color) !important;
+}
+
 .darkgreen-bg {
   background-color: var(--darkgreen-color) !important;
 }
@@ -72,7 +76,7 @@ img {
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .hide{
@@ -112,12 +116,12 @@ form {
 } */
 
 .slide-up {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   transition: transform 0.5s ease-in-out;
 }
 
 .slide-down {
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -168,6 +172,10 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type='checkbox'] {
+  accent-color: var(--darkgreen-color) !important;
 }
 
 .code-modal{

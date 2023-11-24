@@ -31,6 +31,47 @@ import plan1 from '../src/assests/MemberShip/price__1.png'
 import plan2 from '../src/assests/MemberShip/price__2.png'
 import plan3 from '../src/assests/MemberShip/price__2.png'
 
+// Import Comments Imgs
+import person1 from '../src/assests/Comments/person1.png'
+import person2 from '../src/assests/Comments/person2.png'
+import person3 from '../src/assests/Comments/person3.png'
+import person4 from '../src/assests/Comments/person4.png'
+
+// Import Blog Icons
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+
+import recentblog from '../src/assests/BlogDetails/recent-blog.png'
+
+// Import Expert Teacher Imgs
+import pic1 from '../src/assests/ExpertTeacher/Expert-cards/Picture1.png'
+import pic2 from '../src/assests/ExpertTeacher/Expert-cards/Picture2.png'
+import pic3 from '../src/assests/ExpertTeacher/Expert-cards/Picture3.png'
+
+// Import Expert Teaching Academy Cards Img
+import card1 from '../src/assests/ExpertTeachingAcd/cards/Picture1.png'
+import card2 from '../src/assests/ExpertTeachingAcd/cards/Picture2.png'
+import card3 from '../src/assests/ExpertTeachingAcd/cards/Picture3.png'
+import card4 from '../src/assests/ExpertTeachingAcd/cards/Picture4.png'
+import card5 from '../src/assests/ExpertTeachingAcd/cards/Picture5.png'
+import card6 from '../src/assests/ExpertTeachingAcd/cards/Picture6.png'
+
+
+// Import Blog Content Imgs
+import blog1 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog2 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog3 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog4 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog5 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog6 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog7 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog8 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog9 from '../src/assests/BlogDetails/Blog-Img.png'
+import blog10 from '../src/assests/BlogDetails/Blog-Img.png'
+
+
 
 export const evidence = [
     {
@@ -188,8 +229,6 @@ export const MemeberShipTypesData = [
         {
             icon: <FaCheck />,
             list: 'Access to hundreds of courses, tools, forms, worksheets, articles and printable materials and programs to enhance your life and your career.'
-
-
         }
         ]
     },
@@ -763,6 +802,1337 @@ export const benefitsDetails = [
         ]
     },
 
+]
+
+
+export const comments= [
+
+    {
+        img: person1,
+        name: 'Rohan De Spond',
+        date: '25 january 2023',
+        comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry',
+        reply: [
+            {
+                img: person2,
+                name: 'Rohan De Spond',
+                date: '25 january 2023',
+                comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry'
+            }
+        ]
+    },
+    {   
+        img: person2,
+        name: 'Rohan De Spond',
+        date: '25 january 2023',
+        comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry',
+        reply: [
+            {
+                img: person1,
+                name: 'Rohan De Spond',
+                date: '25 january 2023',
+                comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry'
+            }
+        ]
+    },
+    {   
+        img: person3,
+        name: 'Rohan De Spond',
+        date: '25 january 2023',
+        comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry'
+    },
+    {   
+        img: person4,
+        name: 'Rohan De Spond',
+        date: '25 january 2023',
+        comment: 'Lorem Ipsum is simply dummying text of the printing andtypesetting industry'
+    },
+]
+
+export const blogIcons = [
+    {
+        icon: <FaXTwitter/>
+    },
+    {
+        icon: <FaYoutube/>
+    },
+    {
+        icon: <FaYoutube/>
+    },
+    {
+        icon: <IoLogoInstagram/>
+    }
+]
+
+export const recentBlogs = [
+    {
+        img: recentblog,
+        date: '13 November 2023',
+        desc: 'Earn good money and make you very successful'
+    },
+    {
+        img: recentblog,
+        date: '13 November 2023',
+        desc: 'Earn good money and make you very successful'
+    },
+    {
+        img: recentblog,
+        date: '13 November 2023',
+        desc: 'Earn good money and make you very successful'
+    },
+]
+
+export const expertTeacherLinks = [
+    {
+        link: 'Home'
+    },
+    {
+        link: 'Smart Teaching System'
+    },
+    {
+        link: 'Factors Affecting Student Achievement'
+    },
+    {
+        link: 'Expert Teacher'
+    },
+    {
+        link: 'Academy'
+    },
+    {
+        link: 'Individual Professional Development Plan'
+    },
+    {
+        link: 'Assessments'
+    },
+    {
+        link: 'Classroom Observation Instruments'
+    },
+    {
+        link: 'Students Rating their Teachers'
+    },
+    {
+        link: 'Simplified Teachers Competency Assessment'
+    },
+    {
+        link: 'Teacher Competency Assessment'
+    },
+    {
+        link: 'Resources'
+    },
+    {
+        link: 'Articles'
+    },
+    {
+        link: 'Library'
+    },
+    {
+        link: 'Introduction to STS (Arabic)'
+    },
+    {
+        link: 'Membership'
+    }
+]
+
+export const expertTeacherSidebar = [
+    {
+        icon: <FaCheck/>,
+        desc: 'This unique teacher in-service training program will prepare participants for the Expert Teacher Certification.'
+    },
+    {
+        icon: <FaCheck/>,
+        desc: 'The training program provides professional development and hands-on teaching tools for in-service teachers who want to learn and teach the Smart Teaching systems.'
+    },
+    {
+        icon: <FaCheck/>,
+        desc: '“Experts and experienced teachers do not differ in the amount of knowledge they have about curriculum matters or knowledge about teaching strategies. But experts do differ in how they organize and use this content knowledge” Professor Hattie (in review): Distinguishing Expert Teachers from Experienced and Novice Teachers.'
+    },
+    {
+        icon: <FaCheck/>,
+        desc: '“If we want students to learn more, teachers must become students of their own teaching. They need to see their own teaching in a new light. Tom Kane, 2013.'
+    },
+    {
+        icon: <FaCheck/>,
+        desc: 'It is important to acknowledge that schools not only as places for teachers to work but also as places for teachers to learn.'
+    }
+
+]
+
+export const expertTeacherOne = [
+    {
+        desc: 'The mark of an Expert Teacher is not years of practice but rather an awareness of what to do and how to be a tope performer. There is more to expert performance than just knowledge and skills.'
+    },
+    {
+        desc: 'In our Expert Teacher programme you’ll gain everything you need for success as a professional teacher – not only learning our teaching process and strategies, but how to apply it for sustainable measurable results.'
+    },
+    {
+        desc: 'Teachers may need to have clear understanding of why, when and how each of these strategies can be effective, and exactly what it means to demonstrate them in a way that is optimal to promote students’ learning. All strategies are supported by robust evidence of positive impact on student learning. As a result, you’ll learn to change lives, while building a thriving business.'
+    }
+]
+
+export const expertTeacherCards = [
+    {
+        id: '01',
+        img: pic1,
+        title: 'Teaching Skills'
+    },
+    {
+        id: '02',
+        img: pic2,
+        title: 'Teaching Strategies'
+    },
+    {
+        id: '03',
+        img: pic3,
+        title:'Teaching Structure'
+    }
+]
+
+export const phasesDetails = [
+    {
+        desc: 'The Three-Levels teaching structure'
+    },
+    {
+        desc: 'The Evidence-based teaching strategies'
+    },
+    {
+        desc: 'The Teaching Skills'
+    },
+    {
+        desc: 'The Expert Teacher Professional Development programme is designed and developed for all grade levels and subject areas to provide teachers with knowledge skills, tools and resources to start their professional development journey'
+    },
+    {
+        desc: 'Based on the learning ladder model the Teacher Professional Development Programme (TPD) is divided into three phases as shown in the figure'
+    }
+
+]
+
+export const phasesDesc = [
+    {
+        name: 'Phase A',
+        desc: 'is the knowledge phase which is first part of the Expert Teacher Professional Development Programme. Phase A was designed to provide participants with knowledge skills, tools and resources to start their professional development journey for all grade levels and subject areas.'
+    },
+    {
+        name: 'Phase B',
+        desc: 'is the skill phase – the ongoing learning which required teachers to engage with new knowledge that involved theoretical understandings, assessment and practice. It also requires collaboration and participation in a professional community that supported the new strategies and practice at the same time. The programme is supported by a powerful teacher competency assessment tool for evaluating teacher quality. Teachers start to become skilled with a particular method after about 10 repetitions with improvement plateauing after 6 months to 2 years of use.'
+    },
+    {
+        name: 'Phase C',
+        desc: 'is the mastering phase – the ongoing practice that it enters the unconscious parts of the brain.'
+    }
+]
+
+export const singlePhase = [
+    {
+        name: 'Phase A',
+        desc: 'of the Teacher Professional Development Programme (TPDP) consists of 21 training modules. This unique in-service training programme will prepare participants for the Expert Teacher Certification. The Self-Study TPDP is provided FREE of charge to all teachers and educators.'
+    }
+]
+
+export const phaseAProgram = [
+    {
+        desc: 'Identify the characteristics of effective and efficient teaching'
+    },
+    {
+        desc: 'Identify the most effective, evidence-based and proven teaching methods and strategies'
+    },
+    {
+        desc: 'Use the most efficient way to implement and apply these strategies'
+    },
+    {
+        desc: 'Apply and use the three-level structure for greater teaching effectiveness and efficiency.'
+    },
+    {
+        desc: 'Describe how best different methods can be used in a lesson'
+    },
+    {
+        desc: 'Identify appropriate guidelines for a particular teaching and learning process.'
+    },
+    {
+        desc: 'Develop teaching competencies using up-to-date rich resources and tools, and gain the status of Expert Teacher'
+    }
+]
+
+export const phaseAResult = [
+    {
+        name: 'Phase A',
+        desc: 'is the Awareness Metacognition which will move you into the ‘conscious competence’ stage, by demonstrating the skill or ability and the benefit that it will bring to your teaching effectiveness and efficiency. The studies show that the proposed framework was able to reduce the teaching time down to 40% of the usual required time when using the conventional teaching'
+    },
+    {
+        desc: 'However, to master the new evidence-based strategies and the 3-levels model required the Skill Building Phase (Phase B) which will take 6 months to 2 years of practice.'
+    }
+]
+
+export const teachingAcademyCards = [
+    {
+        id: '01',
+        img: card1,
+        title: 'Training Courses',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    },
+    {
+        id: '02',
+        img: card2,
+        title: 'Assessment Tools',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    },
+    {
+        id: '03',
+        img: card3,
+        title: 'eBooks & Articles',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    },
+    {
+        id: '04',
+        img: card4,
+        title: 'Teaching Videos',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    },
+    {
+        id: '05',
+        img: card5,
+        title: 'Networking',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    },
+    {
+        id: '06',
+        img: card6,
+        title: 'Research Reports',
+        desc: 'Our library of extensive courses provides training and practical advice on all aspects of planning, building, marketing & growing your membership site.'
+    }
+]
+
+export const blogsContent = [
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'Moataz',
+        commentsNo: 50,
+        likesNo: 200,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 18,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'Mohamed',
+        commentsNo: 50,
+        likesNo: 200,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 16,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+    {
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 13,
+        month: 'Nov'
+    },
+]
+
+export const blogCategories = [
+    {
+        name: 'Category 1',
+        count: 10
+    },
+    {
+        name: 'Category 2',
+        count: 6
+    },
+    {
+        name: 'Category 3',
+        count: 11
+    },
+    {
+        name: 'Category 4',
+        count: 2
+    },
+    {
+        name: 'Category 5',
+        count: 20
+    }
+]
+
+export const assTwoTeacherDomain = [
+    {
+        desc: 'Understanding the Curriculum'
+    },
+    {
+        desc: 'Planning and Assessment of Instruction'
+    },
+    {
+        desc: 'Management of Classroom'
+    },
+    {
+        desc: 'Instruction'
+    },
+    {
+        desc: 'Standards for Student Achievement'
+    },
+    {
+        desc: 'Appreciation of Diversity'
+    },
+    {
+        desc: 'Professional Responsibilities'
+    },
+    {
+        desc: 'Student Outcomes'
+    }
+]
+
+export const ass2Table = [
+    {
+        index: 'Expert',
+        desc: 'Teacher has almost all the competencies for effective teaching at high level. These are the identified strengths. Strengths have to be sustained and enhanced; however professional development needs have to be continuously address.'
+    },
+    {
+        index: 'Effective',
+        desc: 'Teacher has majority of the competencies at high level for effective teaching. Strengths have to be enhanced. Training and professional development needs have to be addressed.'
+    },
+    {
+        index: 'Developing',
+        desc: 'Teacher has average of all the competencies at high level for effective teaching. These strengths have to be enhanced; however, training needs have to be addressed as priority.'
+    },
+    {
+        index: 'Beginning',
+        desc: 'Teacher has very few of the competencies at high level for effective teaching. Training needs have to be given priority and addressed urgently.'
+    }
+]
+
+export const teacherCompetencies = [
+    {
+        desc: 'Self-assessment: Teachers may assess their own knowledge and skills by using the self-assessment tool that has been developed for the teacher competencies.'
+    },
+    {
+        desc: 'Job descriptions: To assist with staff recruitment and hiring, administrators will find the competencies useful in developing job descriptions for a range of program positions.'
+    },
+    {
+        desc: 'Appraisals of performance: Administrators may use the competencies as a tool in conducting performance appraisals. An administrator and an instructor can view the competencies as a tool for identifying instructor strengths as well as areas for improvement, and then design a professional development plan appropriate for the individual.'
+    },
+    {
+        desc: 'Peer supervisors and mentors: The competencies can guide supervisors and mentors as they employ these emerging and increasingly popular forms of professional development.'
+    },
+    {
+        desc: 'Professional development plans: Administrators and instructors can collaboratively identify elements of the competencies relevant to their program to design both a program-wide professional development plan as well as individual professional development plans.'
+    }
+]
+
+export const teacherCompetencies2 = [
+    {
+        desc: 'individual educators (teachers and principals) planning their own professional development.'
+    },
+    {
+        desc: 'planners of professional development.'
+    },
+    {
+        desc: 'providers of professional development.'
+    },
+    {
+        desc: 'evaluators of existing professional development programs and systems.'
+    }
+]
+
+export const assTwoSidebar1 = [
+    {
+        desc: 'The Teacher Competency Assessment (TCA) is designed to give teachers an assessment of where they stand in all performance areas and detailed guidance on how to improve.'
+    },
+    {
+        desc: 'There are two versions of TCA: holistic (a simplified version) and analytical (full version). In holistic scoring, the rater makes an overall judgment about the quality of performance, while in analytic scoring, the rater assigns a score to each of the dimensions being assessed in the task.'
+    }
+]
+
+export const assTwoSidebar2 = [
+    {
+        desc: 'Influencing the teacher’s definition of excellence in teaching and increasing his ability to recognize mastery experiences.'
+    },
+    {
+        desc: 'Helping the teacher select improvement goals by providing him with clear standards of teaching, opportunities to find gaps between desired and actual practices, and a menu of options for action.'
+    },
+    {
+        desc: 'Facilitating communication with the teacher’s peer, and 4) increasing the influence of external change agents on teacher practice.'
+    }
+]
+
+export const classRoomInstruments = [
+    {
+        desc: 'Stallings Observation System (SOS)'
+    },
+    {
+        desc: 'Brophy-Good Dyadic Interaction System'
+    },
+    {
+        desc: 'Attending Round Observation System’ (AROS)'
+    },
+    {
+        desc: 'Code for Instructional Structure and Student Academic Response’ (CISSAR)'
+    },
+    {
+        desc: 'The Flourishing Classroom Observation Measure (FCOM)'
+    },
+    {
+        desc: 'Classroom Observation Measure (COM)'
+    }
+]
+
+export const classRoomInstrumentsEx = [
+    {
+        desc: 'Please respond to the following questions by placing a mark in the appropriate box as they relate to your course and instructor'
+    },
+    {
+        desc: 'Please respond to the following questions by placing a mark in the appropriate box as they relate to your course and instructor'
+    }
+]
+
+export const ass3Directions = [
+    {
+        desc: 'Please respond to the following questions by placing a mark in the appropriate box as they relate to your course and instructor'
+    },
+    {
+        desc: 'Please respond to the following questions by placing a mark in the appropriate box as they relate to your course and instructor'
+    }
+]
+
+export const ass3EvaluationTable = [
+    {
+        title: [
+            {
+                name: 'Not Evident'
+            },
+            {
+                name: 'Somewhat Evident	'
+            },
+            {
+                name: 'Evident	'
+            },
+            {
+                name: 'Very Evident'
+            },
+        ],
+        evaluation: [
+            {
+                value: 1
+            },
+            {
+                value: 2
+            },
+            {
+                value: 3
+            },
+            {
+                value: 4
+            },
+        ]
+    }
+]
+
+export const ass3Questions = [
+    {
+        category: 'Professional Knowledge',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 1, 
+                text: '1. Addresses appropriate curriculum standards' 
+            },
+            { 
+                id: 2, 
+                text: '2. Facilitates students’ use of higher level thinking skills' 
+            },
+            {
+                id: 3,
+                text: '3. Demonstrates ability to link present content with past and future learning'
+            },
+            {
+                id: 4,
+                text: '4. Demonstrates an accurate knowledge of the subject matter checking for understanding'
+            },
+            {
+                id: 5,
+                text: '5. Demonstrates skills relevant to subject area(s) utilizing best practices  based on current research'
+            },
+            {
+                id: 6,
+                text: '6. Bases instruction on goals that reflect high expectations'
+            },
+            {
+                id: 7,
+                text: '7. Demonstrates an understanding of the knowledge of development'
+            }
+        ]
+    },
+    {
+        category: 'Instructional Planning',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 8,
+                text: '8. Analyses and uses student learning data to inform planning.'
+            },
+            {
+                id: 9,
+                text: '9. Plans instruction and time for realistic pacing'
+            },
+            {
+                id: 10,
+                text: '10. Plans for differentiated instruction'
+            },
+            {
+                id: 11,
+                text: '11. Develops appropriate long- and short-range plans and adapts plans'
+            },
+            {
+                id: 12,
+                text: '12. Coordinates plans with appropriate colleagues'
+            }
+        ]
+    },
+    {
+        category: 'Instructional Delivery',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 13,
+                text: '13. Addresses individual learning differences'
+            },
+            {
+                id: 14,
+                text: '14. Uses rigorous instructional strategies Use instructional technology'
+            },
+            {
+                id: 15,
+                text: '15. Engages students'
+            },
+            {
+                id: 16,
+                text: '16. Builds on prior knowledge Communicates clearly'
+            },
+            {
+                id: 17,
+                text: '17. Maximizes instructional learning time'
+            }
+        ]
+    },
+    {
+        category: 'Assessment of and for Student Learning',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 18,
+                text: '18. Analyses data from benchmarks'
+            },
+            {
+                id: 19,
+                text: '19. Uses assessment tools based on division curriculum and pacing guides'
+            },
+            {
+                id: 20,
+                text: '20. Uses a variety of valid, appropriate assessments'
+            },
+            {
+                id: 21,
+                text: '21. Maintains assessment information'
+            },
+            {
+                id: 22,
+                text: '22. Uses pre-/post-assessment data on each student'
+            },
+            {
+                id: 23,
+                text: '23. Maintains appropriate records'
+            },
+            {
+                id: 24,
+                text: '24. Gives constructive feedback'
+            }
+        ]
+    }
+];
+
+export const ass4Structure = [
+    {
+        desc: 'The Simplified TCA assessment tool is made up of the 19 Indicators and 8 Domains.'
+    },
+    {
+        desc: 'The assessment tool uses a four-level rating scale:'
+    },
+    {
+        desc: 'The rating to the indicators are expressed as:'
+    }
+]
+
+export const ass4RatingIndicators = [
+    {   
+        name: 'Low level:',
+        desc: '1. Does Not Meet Standards – Unacceptable performance leading to an improvement plan, intensive support, and, if improvement isn’t made within a reasonable amount of time, dismissal.'
+    },
+    {
+        name: 'Fair level:',
+        desc: '2. Improvement Necessary – Performance is mediocre; no teacher should be content to remain at this level.'
+    },
+    {
+        name: 'Satisfactory level:',
+        desc: '3. Effective – Solid, expected professional performance; teachers should feel good about scoring at this level.'
+    },
+    {
+        name: 'High level:',
+        desc: '4. Master teacher performance that meets very demanding criteria'
+    }
+]
+
+export const ass4EvaluationTable = [
+    {
+        title: [
+            {
+                name: 'Low level:'
+            },
+            {
+                name: 'Fair level:'
+            },
+            {
+                name: 'Satisfactory level:'
+            },
+            {
+                name: 'High level:'
+            }
+        ],
+        evaluation: [
+            {
+                value: 1
+            },
+            {
+                value: 2
+            },
+            {
+                value: 3
+            },
+            {
+                value: 4
+            },
+        ]
+    },
+]
+
+
+export const ass4Sidebar = [
+    {
+        desc: 'The Simplified TCA assessment tool is made up of 19 items (Indicators) and 8 Domains.'
+    },
+    {
+        desc: 'The full version (112 items, 19 Indicators and 8 Domains) is only available for certified Expert Teachers. This tool may be used by Self, Principal, Peers, Supervisors and Experts.'
+    }
+]
+
+export const ass5StudentPerspectives = [
+    {
+        desc: 'teachers as they work to improve'
+    },
+    {
+        desc: 'leaders as they set professional development priorities for teachers'
+    },
+    {
+        desc: 'Attending Round Observation System’ (AROS)'
+    },
+    {
+        desc: 'coaches and mentors in supporting teachers'
+    },
+    {
+        desc: 'higher education institutions as they'
+    },
+    {
+        desc: 'develop teacher training programs'
+    }
+]
+
+export const ass5EvaluationTable = [
+    {
+        title: [
+            {
+                name: 'Never'
+            },
+            {
+                name: 'Sometimes'
+            },
+            {
+                name: 'Usually'
+            },
+            {
+                name: 'Always'
+            }
+        ],
+        evaluation: [
+            {
+                value: 1
+            },
+            {
+                value: 2
+            },
+            {
+                value: 3
+            },
+            {
+                value: 4
+            },
+        ]
+    }
+]
+
+export const ass5QuestionsPartOneTitles = {
+    head: 'CONSTRUCT',
+    title: 'SAMPLE QUESTION',
+    answers: [
+        {
+            answer: 1
+        },
+        {
+            answer: 2
+        },
+        {
+            answer: 3
+        },
+        {
+            answer: 4
+        }
+    ],
+}
+
+export const ass5QuestionsPartOne = [
+    {
+        category: 'CARE',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 1, 
+                text: 'My teacher in this class makes me feel that s/he really cares about me.' 
+            },
+            { 
+                id: 2, 
+                text: 'My teacher really tries to understand how students feel about things.' 
+            },
+        ]
+    },
+    {
+        category: 'CONTROL',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 3, 
+                text: 'Students in this class treat the teacher with respect.' 
+            },
+            { 
+                id: 4, 
+                text: 'Our class stays busy and doesn’t waste time.' 
+            },
+        ]
+    },
+    {
+        category: 'CLARIFY',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 5, 
+                text: 'My teacher has several good ways to explain each topic that we cover in this class.' 
+            },
+            { 
+                id: 6, 
+                text: 'My teacher explains difficult things clearly.' 
+            },
+        ]
+    },
+    {
+        category: 'CHALLENGE',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 7, 
+                text: 'In this class, we learn a lot almost every day.' 
+            },
+            { 
+                id: 8, 
+                text: 'In this class, we learn to correct our mistakes.' 
+            },
+        ]
+    },
+    {
+        category: 'CAPTIVATE',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 9, 
+                text: 'My teacher makes lessons interesting' 
+            },
+            { 
+                id: 10, 
+                text: 'I like the ways we learn in this class.' 
+            },
+        ]
+    },
+    {
+        category: 'CONFER',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 11, 
+                text: 'Students speak up and share their ideas about class work.' 
+            },
+            { 
+                id: 12, 
+                text: 'My teacher respects my ideas and suggestions.' 
+            },
+        ]
+    },
+    {
+        category: 'CONSOLIDATE',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 13, 
+                text: 'My teacher checks to make sure we understand what s/he is teaching us.' 
+            },
+            { 
+                id: 14, 
+                text: 'The comments that I get on my work in this class help me understand how to improve.' 
+            },
+        ]
+    },
+    
+]
+
+export const ass5QuestionsPartTwoTitles = {
+    head: 'Students Rating their Teacher'
+}
+
+export const ass5QuestionsPartTwo = [
+    {
+        category: 'Students in the classroom feel cared for',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 1, 
+                text: '1. My teacher makes me feel that he/she cares about me.' 
+            },
+            { 
+                id: 2, 
+                text: '2. My teacher encourages me to do my best.' 
+            },
+            {
+                id: 3,
+                text: '3. My teacher is helpful when I ask questions.'
+            }
+        ]
+    },
+    {
+        category: 'Student behavior is managed to enable learning',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 4, 
+                text: '4. Our class stays busy and does not waste time.' 
+            },
+            { 
+                id: 5, 
+                text: '5. My teacher’s classroom rules and ways of doing things are fair.' 
+            },
+            {
+                id: 6,
+                text: '6. My classmates’ misbehavior slows down the learning process.'
+            },
+            {
+                id: 7,
+                text: '7. My classmates and I know what we should be doing and learning.'
+            }
+        ]
+    },
+    {
+        category: 'Students receive support and scaffolding',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 8, 
+                text: '8. My teacher checks to make sure we understand what he/she is teaching us.' 
+            },
+            { 
+                id: 9, 
+                text: '9. My teacher explains another way if you don’t understand something.' 
+            },
+            {
+                id: 10,
+                text: '10. My teacher takes time to summarize what we learn each day'
+            },
+            {
+                id: 11,
+                text: '11. My teacher helps me when I need it or don’t understand something.'
+            },
+        ]
+    },
+    {
+        category: 'Students experience a challenging work environment',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 12, 
+                text: '12. My teacher accepts nothing less than our full effort.' 
+            },
+            { 
+                id: 13, 
+                text: '13. My teacher knows when I work hard and am doing my best' 
+            },
+            {
+                id: 14,
+                text: '14. We learn to correct our mistakes.'
+            },
+            {
+                id: 15,
+                text: '15. My teacher wants us to improve our thinking skills'
+            },
+            {
+                id: 16,
+                text: '16. My teacher wants me to explain my thinking.'
+            },
+            {
+                id: 17,
+                text: '17. We learn a lot almost every day.'
+            },
+        ]
+    },
+    {
+        category: 'Students are invested in classroom learning',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 18, 
+                text: '18. My teacher tells us what we are learning and why.' 
+            },
+            { 
+                id: 19, 
+                text: '19. My teacher helps us set goals for our learning and keep track of our progress.' 
+            },
+            {
+                id: 20,
+                text: '20. My teacher makes school work interesting.'
+            },
+            {
+                id: 21,
+                text: '21. We get choices in how to complete activities.'
+            },
+            {
+                id: 22,
+                text: '22. My teacher makes me work hard so I learn what I need to know'
+            },
+            {
+                id: 23,
+                text: '23. My teacher assigns homework that helps me learn.'
+            },
+        ]
+    },
+    {
+        category: 'Students receive descriptive feedback',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            { 
+                id: 24, 
+                text: '24. When my teacher marks my work, he/she writes on my papers to help me understand.' 
+            },
+            { 
+                id: 25, 
+                text: '25. The comments that I get on my work help me understand how to do my work better.' 
+            },
+        ]
+    },
 ]
 
 

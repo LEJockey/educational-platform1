@@ -69,7 +69,7 @@ const Login = ({ saveUserData }) => {
         let close = document.querySelector('.close-login')
         close.click()
         navigate('/');
-    }, 5000);
+    }, 2000);
     };
 
   return (

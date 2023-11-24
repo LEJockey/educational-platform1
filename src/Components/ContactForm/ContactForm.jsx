@@ -24,7 +24,7 @@ const ContactForm = () => {
     }
 
     let validationSchema = Yup.object({
-        name: Yup.string().required("Name is Required").min(3, "Name minlength is 3 chars").max(10, "Name maxlength is 10 chars"),
+        name: Yup.string().required("Name is Required").min(3, "Name minlength is 3 chars").max(20, "Name maxlength is 20 chars"),
         email: Yup.string().required("Email is Required").email("Invalid email address *exemple@yyy.zzz"),
         phone: Yup.string().required("Phone is required"),
         message: Yup.string().required('Please Enter description about Your Founder').min(10, 'Minlength of Founder brief 20 chars').max(200, 'Minlength of Founder brief 200 chars')
@@ -40,6 +40,16 @@ const ContactForm = () => {
         validationSchema,
         onSubmit: handleContacting,
     });
+
+    // contact-btn
+    const handleVerificationSubmit = () => {
+      
+        setTimeout(() => {
+          let close = document.querySelector('.contact-btn')
+            close.click()
+            
+        }, 2000);
+      };
 
   return (
 <>
@@ -171,7 +181,10 @@ const ContactForm = () => {
             <div className='submit-contact'>
 
                 <button
-                onClick={formik.handleSubmit}
+                onClick={() => {
+                    formik.handleSubmit();
+                    handleVerificationSubmit();
+                }}
                 disabled={!(formik.isValid && formik.dirty)}
                 className='modal-btn mb-5'
                 data-bs-target="#exampleModalToggle3"
@@ -198,6 +211,9 @@ const ContactForm = () => {
             {/* Modal Content */}
             <div className="modal-content p-5">
                 <div className="modal-header text-center p-0">
+
+                    <button type="button" className="btn-close  contact-btn d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+
                     <h2 className="modal-title" id="exampleModalToggleLabel3">
                         Your message was sent successfully,We will respond to you as soon as possible
                     </h2>

@@ -70,23 +70,27 @@ const ForgetPassword = () => {
     async function resetPass(value) {
         setLoading(true)
         console.log(value) 
+        console.log(`${value.resetCode1}${value.resetCode2}` )
         setLoading(false)
     }
 
-    let validCode = Yup.object({
-        resetCode1: Yup.number().required().max(1),
-        resetCode2: Yup.number().required().max(1),
-        resetCode3: Yup.number().required().max(1),
-        resetCode4: Yup.number().required().max(1),
-    })
     const isCodeComplete = () => {
-    for (let index = 1; index <= 4; index++) {
-        if (!formik1.values[`resetCode${index}`]) {
-        return false;
+        for (let index = 1; index <= 4; index++) {
+            
+            if (!formik1.values[`resetCode${index}`]) {
+            return false;
+            }
         }
-    }
-    return true;
+        return true;
     };
+
+    let validCode = Yup.object({
+        resetCode1: Yup.string().required('Reset Code is Required').matches(/\d{1}/, 'Please Enter Valid code').max(1),
+        resetCode2: Yup.string().required('Reset Code is Required').matches(/\d{1}/, 'Please Enter Valid code').max(1),
+        resetCode3: Yup.string().required('Reset Code is Required').matches(/\d{1}/, 'Please Enter Valid code').max(1),
+        resetCode4: Yup.string().required('Reset Code is Required').matches(/\d{1}/, 'Please Enter Valid code').max(1),
+    })
+    
 
         let formik1 = useFormik({
             initialValues: {
@@ -96,25 +100,58 @@ const ForgetPassword = () => {
             resetCode4: '',
         },
         validationSchema: validCode,
-        onSubmit: resetPass
+        onSubmit: (values, { resetForm }) => {
+            resetPass(values); 
+            
+            resetForm({
+                values: {
+                    resetCode1: '',
+                    resetCode2: '',
+                    resetCode3: '',
+                    resetCode4: '',
+                },
+            });
+        },
     })
     
     // Handle Reset Password
-    async function handleReset(values) {
-        setLoading(true)
-        //    try {
-        //     let data = await axios.put(`${baseURL}/api/v1/auth/resetPassword`, values)
-        //     // console.log (data)
-        //     if (data.data.token) {
-        //       navigate('/login')
-        //     }
-        //   } catch (error) {
-        //     console.log (error)
-        //     seterrMsg(error.response.data.message)
-        //     setLoading(false)
-        //   }
-        console.log(values)
-        setLoading(false)
+    // async function handleReset(values) {
+    //     setLoading(true)
+    //     //    try {
+    //     //     let data = await axios.put(`${baseURL}/api/v1/auth/resetPassword`, values)
+    //     //     // console.log (data)
+    //     //     if (data.data.token) {
+    //     //       navigate('/login')
+    //     //     }
+    //     //   } catch (error) {
+    //     //     console.log (error)
+    //     //     seterrMsg(error.response.data.message)
+    //     //     setLoading(false)
+    //     //   }
+    //     console.log(values)
+    //     setLoading(false)
+    // }
+    async function handleReset(values, { resetForm, setErrors, setSubmitting }) {
+        setLoading(true);
+        try {
+            // Your asynchronous logic here (e.g., axios.put)
+            // For example:
+            // let data = await axios.put(`${baseURL}/api/v1/auth/resetPassword`, values);
+            // if (data.data.token) {
+            //     navigate('/login');
+            //     resetForm(); // Reset the form after successful submission
+            // }
+    
+            // Simulating a successful submission for demonstration purposes
+            console.log(values);
+            resetForm(); // Reset the form after successful submission
+        } catch (error) {
+            console.log(error);
+            setErrors({ submit: error.response.data.message || 'An error occurred' });
+        } finally {
+            setLoading(false);
+            setSubmitting(false);
+        }
     }
         
     let validationSchemaPass = Yup.object ({
@@ -232,13 +269,14 @@ return (
                     <input
                         key={index}
                         type="number"
-                        maxLength="1"
+                        
                         className="form-control code-input"
                         id={`floatingCode${index}`}
                         name={`resetCode${index}`}
                         onChange={(e) => {
                             formik1.handleChange(e);
-                            formik1.validateForm()
+                            
+                            
                             if (e.target.value && index < 4) {
                             // Focus on the next input
                             document.getElementById(`floatingCode${index + 1}`).focus();
@@ -260,8 +298,8 @@ return (
                         type='submit'
                         className="btn m-0"
                         onClick={formik1.handleSubmit}
-                        // disabled={!(formik1.isValid && formik1.dirty)}
-                        disabled={!isCodeComplete()}
+                        disabled={!(formik1.isValid && formik1.dirty && isCodeComplete())}
+
                         data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
                         Submit
                     </button>
@@ -289,6 +327,7 @@ return (
                     className="form-control"
                     id= 'floatingPassword'
                     name='newPassword'
+                    placeholder=''
                     onChange={formik2.handleChange}
                     onBlur={formik2.handleBlur}
                     value={formik2.values.newPassword}
@@ -316,6 +355,7 @@ return (
                     className="form-control"
                     id= 'floatingRepassword'
                     name='confirmNewPassword'
+                    placeholder=''
                     onChange={formik2.handleChange}
                     onBlur={formik2.handleBlur}
                     value={formik2.values.confirmNewPassword}

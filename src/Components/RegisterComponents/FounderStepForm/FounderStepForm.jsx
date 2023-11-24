@@ -236,12 +236,12 @@ const FounderStepForm = () => {
                 required
               />
               {/* Label */}
-              <label
+              {/* <label
                 className={`mx-2 ${lang === "ar" ? " end-0" : "start-0"}`}
                 htmlFor="floatingPhone"
               >
-                {langs[lang].ContactForm.phone}
-              </label>
+                {langs[lang].ContactForm.Phone}
+              </label> */}
 
               <span><MdPhone/></span>
 
