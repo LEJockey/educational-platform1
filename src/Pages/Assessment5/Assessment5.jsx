@@ -4,9 +4,11 @@ import { expertTeacherLinks } from '../../data'
 
 import './Assessment5.css'
 import Assessment5Details from '../../Components/AssessmentsComponents/AssessmentFive/Assessment5Details/Assessment5Details'
+import Assessment5Sidebar from '../../Components/AssessmentsComponents/AssessmentFive/Assessment5Sidebar/Assessment5Sidebar'
 
 const Assessment5 = () => {
-  return (
+
+return (
     <section className="ass5 p-3 p-md-5">
 
         <div className="row gy-4 main-row">
@@ -25,14 +27,14 @@ const Assessment5 = () => {
 
             <div className="col-xl-3 px-3">
                 
-                {/* <Assessment4Sidebar/> */}
+                <Assessment5Sidebar/>
                 
             </div>
 
         </div>
 
     </section>
-  )
+)
 }
 
 export default Assessment5

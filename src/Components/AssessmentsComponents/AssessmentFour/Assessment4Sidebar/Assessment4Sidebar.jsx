@@ -5,12 +5,12 @@ import ImageComp from '../../../ImageComp/ImageComp'
 import img1 from '../../../../assests/Assessments/Assessment4/classroom_observ 1.png'
 import img2 from '../../../../assests/Assessments/Assessment4/btn_1.png'
 
-import './Assessment4Sidebar.css'
 import { ass4Sidebar } from '../../../../data'
 import { Link } from 'react-router-dom';
+import './Assessment4Sidebar.css'
 
 const Assessment4Sidebar = () => {
-  
+
 return (
     <aside className='ass4-sidebar p-4'>
 
@@ -35,11 +35,11 @@ return (
         </ul>
 
         <Link className='d-flex justify-content-center'>
-          <ImageComp src={img2}/>
+            <ImageComp src={img2}/>
         </Link>
 
     </aside>
-  )
+)
 }
 
 export default Assessment4Sidebar

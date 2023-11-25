@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaCheck } from "react-icons/fa6";
 
-import { ass4EvaluationTable, ass4RatingIndicators, ass4Structure } from '../../../../data';
+import { ass4EvaluationTable, ass4Questions, ass4RatingIndicators, ass4Structure } from '../../../../data';
 import EvaluationTable from '../../EvaluationTable/EvaluationTable';
 
 import './Assessment4Details.css'
+import AssessmentTable from '../../AssessmentThree/AssessmentTable/AssessmentTable';
 const Assessment4Details = () => {
 
     return (
@@ -32,7 +33,7 @@ const Assessment4Details = () => {
 
             {ass4RatingIndicators.map(({name, desc}, idx) =>
 
-                <li className='mb-3'>
+                <li className='mb-3' key={idx}>
                     <p className='special-p'> <span>{name}</span> {desc}</p>
                 </li>
             )}
@@ -40,6 +41,8 @@ const Assessment4Details = () => {
         </ul>
 
         <EvaluationTable table={ass4EvaluationTable}/>
+
+        <AssessmentTable Questions={ass4Questions} adjustCell={true}/>
 
 
     </div>

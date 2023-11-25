@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 
 import './AssessmentTable.css'
 
-const AssessmentTable = ({ Questions, columnHead= null, tableName}) => {
+const AssessmentTable = ({ Questions, columnHead= null, tableName, adjustCell}) => {
 
     // const [showError, setShowError] = useState(false);
     const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -21,29 +21,69 @@ const AssessmentTable = ({ Questions, columnHead= null, tableName}) => {
 
     
 
+    // const printSelectedAnswers = () => {
+    //     const answeredQuestions = [];
+        
+    //     Questions.forEach((category) => {
+    //         category.questions.forEach((question) => {
+    //             const answerId = selectedAnswers[question.id];
+    //                 if (answerId !== undefined) {
+    //                     answeredQuestions.push({
+    //                     category: category.category,
+    //                     question: question.text,
+    //                     answer: answerId,
+    //                     });
+    //                 }
+    //         });
+    //     });
+        
+    //     // Questions.reduce((total, category) => total + category.questions.length, 0)
+
+    //     if (answeredQuestions.length === Questions[Questions.length-1].questions[Questions[Questions.length-1].questions.length-1].id) {
+    //         // setShowError(false)
+    //         console.log('Selected Answers:', answeredQuestions);
+    //     } else {
+    //         // setShowError(true)
+    //         console.log('Please answer all questions.');
+    //     }
+    // };
+
     const printSelectedAnswers = () => {
         const answeredQuestions = [];
-        
+        const categoryAverages = {};
+        const categoryQuestionCounts = {};
+    
         Questions.forEach((category) => {
+            let total = 0;
+            let answeredCount = 0;
+    
             category.questions.forEach((question) => {
                 const answerId = selectedAnswers[question.id];
-                    if (answerId !== undefined) {
-                        answeredQuestions.push({
-                        category: category.category,
-                        question: question.text,
-                        answer: answerId,
-                        });
-                    }
+                
+                if (answerId !== undefined) {
+                    answeredCount++;
+                    total += answerId;
+                    answeredQuestions.push({
+                    category: category.category,
+                    question: question.text,
+                    answer: answerId,
+                    });
+                }
             });
-        });
-        
-        // Questions.reduce((total, category) => total + category.questions.length, 0)
+    
+            if (answeredCount > 0) {
+                categoryAverages[category.category] = total / answeredCount;
+                categoryQuestionCounts[category.category] = answeredCount;
 
+            }
+        });
+    
         if (answeredQuestions.length === Questions[Questions.length-1].questions[Questions[Questions.length-1].questions.length-1].id) {
-            // setShowError(false)
             console.log('Selected Answers:', answeredQuestions);
+            console.log('Category Averages:', categoryAverages);
+            console.log('Category Question Counts:', categoryQuestionCounts);
+
         } else {
-            // setShowError(true)
             console.log('Please answer all questions.');
         }
     };
@@ -135,14 +175,14 @@ return (
 
                     <tr>
 
-                        <th scope='col'> <div>{category}</div> </th>
+                        <th scope='col'> {adjustCell? <span>{category}</span> : <div>{category}</div>}  </th>
                         
                         {answers.map(({answer}, idx) =>
                             <td 
                             key={idx}
-                            className='text-center' 
+                            className='text-center position-relative' 
                             >
-                                {answer}
+                                {adjustCell? <div className='position-absolute top-50 start-50 translate-middle'>{answer}</div> : <span>{answer}</span> } 
                             </td>
                         )}
                     </tr>
@@ -154,7 +194,7 @@ return (
                     <tr key={idx}>
 
                         <th scope="col"> 
-                            <div>{question.text}</div> 
+                            {adjustCell? <span>{question.text}</span> : <div>{question.text}</div>} 
                         </th>
 
                         {[1, 2, 3, 4].map((answerId) => (

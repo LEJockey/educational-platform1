@@ -1638,6 +1638,237 @@ export const ass4EvaluationTable = [
     },
 ]
 
+export const ass4Questions = [
+    {
+        category: 'Indicators',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 1,
+                text: '1. The teacher is up to date regarding curriculum content and understands the central concepts, tools of inquiry, and structures of the discipline and developmental tasks so as to create learning experiences that make these concepts meaningful for students.'
+            },
+        ]
+    },
+    {
+        category: 'EFFECTIVE PLANNING AND ASSESSMENT OF CURRICULUM AND INSTRUCTION',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 2,
+                text: '2. The teacher plans instruction effectively utilizing materials and resources to achieve the objectives of the curriculum.'
+            },
+            {
+                id: 3,
+                text: '3. The teacher plans assessment of student learning effectively.'
+            },
+            {
+                id: 4,
+                text: '4. The teacher monitors students’ understanding of the curriculum effectively and adjusts instruction, materials, or assessments when appropriate.'
+            }
+        ]
+    },
+    {
+        category: 'EFFECTIVE MANAGEMENT OF CLASSROOM ENVIRONMENT',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 5,
+                text: '5. The teacher creates an environment that is positive for student learning and involvement.'
+            },
+            {
+                id: 6,
+                text: '6. The teacher maintains appropriate standards of behaviour, mutual respect and safety.'
+            }
+        ]
+    },
+    {
+        category: 'EFFECTIVE INSTRUCTION',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 7,
+                text: '7. The teacher makes learning goals clear to students.'
+            },
+            {
+                id: 8,
+                text: '8. The teacher uses appropriate instructional techniques.'
+            },
+            {
+                id: 9,
+                text: '9. The teacher uses appropriate questioning techniques.'
+            },
+            {
+                id: 10,
+                text: '10. The teacher evaluates, tries innovative approaches, and refines instructional strategies, including the effective use of technologies, to increase student learning and confidence to learn.'
+            }
+        ]
+    },
+    {
+        category: 'PROMOTION OF HIGH STANDARDS AND EXPECTATIONS FOR STUDENT ACHIEVEMENT',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 11,
+                text: '11. The teacher communicates learning goals and high standards and expectations to students.'
+            },
+            {
+                id: 12,
+                text: '12. The teacher promotes confidence and perseverance in the student that stimulate increased personal student responsibility for achieving the goals of the curriculum.'
+            }
+        ]
+    },
+    {
+        category: 'PROMOTION OF EQUITY AND APPRECIATION OF DIVERSITY',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 13,
+                text: '13. The teacher strives to ensure equitable opportunities for student learning.'
+            },
+            {
+                id: 14,
+                text: 'The teacher demonstrates appreciation for and sensitivity to the diversity among individuals.'
+            }
+        ]
+    },
+    {
+        category: 'FULFILLMENT OF PROFESSIONAL RESPONSIBILITIES',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 15,
+                text: '15. The teacher is constructive and cooperative in interactions with parents and receptive to their contributions.'
+            },
+            {
+                id: 16,
+                text: '16. The teacher shares responsibility for accomplishing the goals and priorities of his/her grade/team/department, building and school district.'
+            },
+            {
+                id: 17,
+                text: '17. The teacher is a reflective and continuous learner.'
+            }
+        ]
+    },
+    {
+        category: 'STUDENT OUTCOMES',
+        answers: [
+            {
+                answer: 1
+            },
+            {
+                answer: 2
+            },
+            {
+                answer: 3
+            },
+            {
+                answer: 4
+            }
+        ],
+        questions: [
+            {
+                id: 18,
+                text: '18. The teacher effectively facilitates student learning and growth.'
+            },
+            {
+                id: 19,
+                text: '19. Students demonstrate appropriate mastery of the knowledge and/or skills which are the objectives of the staff member’s work.'
+            }
+        ]
+    }
+]
+
 
 export const ass4Sidebar = [
     {
@@ -2135,4 +2366,13 @@ export const ass5QuestionsPartTwo = [
     },
 ]
 
+export const ass5Sidebar = [
+    {
+        desc: '“No one has a bigger stake in teaching effectiveness than students. Nor are there any better experts on how teaching is experienced by its intended beneficiaries. But only recently have many policymakers and practitioners come to recognize that—when asked the right questions, in the right ways—students can be an important source of information on the quality of teaching and the learning environment in individual classrooms.”'
+    },
+    {
+        desc: 'MET project. Student Perception Surveys and Their Implementation. Bill & Melinda Gates Foundation.'
+    }
+
+]
 

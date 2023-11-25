@@ -71,8 +71,16 @@
     transform: translateY(-50%);
 }
 
+.ass-table th span{
+    font-weight: 400;
+    font-family: Arial;
+    font-style: normal;
+    line-height: normal;
+    font-size: 1em;
+}
 
-.ass-table thead th div, .ass-table .custom-th{
+
+.ass-table thead th div, .ass-table .custom-th, .ass-table thead th span{
     color: #FF2828;
     font-weight: 400;
     font-family: Arial;
