@@ -10,6 +10,13 @@
     padding-left: 3.75rem;
     padding-right: 3.75rem;
 }
+
+@media screen and (max-width: 768px) {
+    .main-membership-img figcaption{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 .main-membership-img h1{
     font-size: 3rem;
     font-weight: 700;

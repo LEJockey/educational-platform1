@@ -90,7 +90,7 @@ const Assessment3Details = () => {
         {/* <Evaluation3 Table/> */}
         <EvaluationTable table={ass3EvaluationTable} />
 
-        <AssessmentTable Questions={ass3Questions}/>
+        <AssessmentTable Questions={ass3Questions} adjustCell={true}/>
 
         
     </div>

@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { blogsContent } from '../../data';
 import BlogContent from '../../Components/BlogDetailsComponents/BlogContent/BlogContent';
 
-import './Blogs.css';
 import FollowBlog from '../../Components/BlogDetailsComponents/FollowBlog/FollowBlog';
 import BlogSearch from '../../Components/BlogDetailsComponents/BlogSearch/BlogSearch';
 import BlogContact from '../../Components/BlogDetailsComponents/BlogContact/BlogContact';
 import BlogCategories from '../../Components/BlogDetailsComponents/BlogCategories/BlogCategories';
 import PaginationComp from './../../Components/PaginationComp/PaginationComp';
 
+import './Blogs.css';
 const Blogs = () => {
 
     return (
@@ -40,8 +40,9 @@ const Blogs = () => {
                         {blogsContent.map((blog, idx) =>
                             
                             <div className="col-md-6" key={idx}>
-
-                                <BlogContent {...blog} slice={true} />
+                                
+                                    <BlogContent {...blog} slice={true} blogId={blog.id} />
+                                
 
                             </div>
                         

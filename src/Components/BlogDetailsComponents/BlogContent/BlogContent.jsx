@@ -12,7 +12,7 @@ import './BlogContent.css'
 import { Link } from 'react-router-dom';
 
 
-const BlogContent = ({img, title, name, commentsNo, likesNo, desc, day, month, slice = false}) => {
+const BlogContent = ({img, title, name, commentsNo, likesNo, desc, day, month, slice = false, blogId, id}) => {
 return (
 
     
@@ -32,10 +32,10 @@ return (
                 </div>
             </div>
 
-            {slice? <p>{desc.slice(0, 200)}</p> : <p>{desc}</p>}
+            {slice? <p>{desc.slice(0, 200)}...</p> : <p>{desc}</p>}
             
-            {slice && <Link className='d-flex align-items-center justify-content-end darkgreen-color fw-bold'>Read More <IoArrowForward className='ms-3' /></Link>}
-
+            {slice && <Link className='d-flex align-items-center justify-content-end darkgreen-color fw-bold'  to={`/blogdetails/${blogId}`}>Read More <IoArrowForward className='ms-3' /></Link>}
+{/* <Link className=' text-decoration-none ' to={`/blogdetails/${blog?.id}`}> */}
 
         </div>
 

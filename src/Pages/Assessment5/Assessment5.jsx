@@ -9,6 +9,14 @@ import Assessment5Sidebar from '../../Components/AssessmentsComponents/Assessmen
 const Assessment5 = () => {
 
 return (
+    <>
+    <figure className='main-ass5-img d-flex align-items-center m-0'>
+        <figcaption>
+            <h1 className='med-mb'>Student Rating Their Teacher</h1>
+            <h4>Tools For Your Professional Growth</h4>
+        </figcaption>
+    </figure>
+
     <section className="ass5 p-3 p-md-5">
 
         <div className="row gy-4 main-row">
@@ -34,6 +42,7 @@ return (
         </div>
 
     </section>
+    </>
 )
 }
 

@@ -11,7 +11,7 @@ const Assessment4Details = () => {
     return (
     <div className='ass4-details'>
 
-        <h2 className='med-mb'>Classroom Observation Instruments</h2>
+        <h2 className='med-mb'>Simplified Teachers Competency Assessment (TCA)</h2>
 
         <p className='special-p'>
             Structure

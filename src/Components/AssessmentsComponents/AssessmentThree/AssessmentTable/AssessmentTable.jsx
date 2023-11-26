@@ -103,7 +103,7 @@ return (
                 <table className='table table-bordered ass-table'>
                     <thead>
                         <tr>
-                            <td className='position-relative W-28 W-17 W-18'> <div className='custom-th position-absolute top-50 start-50 translate-middle'>{columnHead.head}</div> </td>
+                            <td className='position-relative W-23 W-22 W-17 W-18'> <div className='custom-th position-absolute top-50 start-50 translate-middle'>{columnHead.head}</div> </td>
                             <th rowSpan="2" className='custom-th W-60'> {columnHead.title} </th>
                                 {columnHead.answers.map(({ answer }, idx) => (
                                     <td key={idx} className='text-center position-relative W-5 W-3'>
@@ -122,7 +122,7 @@ return (
                             {questions.map((question, idx) => (
                                 <tr key={idx}>
                                 {idx === 0 && (
-                                    <td rowSpan={questions.length} className='W-28 W-17 W-18'>
+                                    <td rowSpan={questions.length} className='W-28 W-23 W-22 W-17 W-18'>
                                         <div className='text-dark '>{category}</div>
                                     </td>
                                 )}
@@ -160,7 +160,7 @@ return (
             {tableName&&
             <thead>
                 <tr>
-                    <th colSpan={Questions[0].answers.length + 1}> <div className='L-3'>{tableName.head}</div> </th>
+                    <th colSpan={Questions[0].answers.length + 1} className={adjustCell&& `p-3 py-4`}>{adjustCell? <span className=' fw-medium '>{tableName.head}</span> :  <div className='L-3'>{tableName.head}</div>} </th>
                 </tr>
             </thead>
             }
@@ -175,7 +175,7 @@ return (
 
                     <tr>
 
-                        <th scope='col'> {adjustCell? <span>{category}</span> : <div>{category}</div>}  </th>
+                        <th scope='col'  className={adjustCell&& `p-3`}> {adjustCell? <span>{category}</span> : <div>{category}</div>}  </th>
                         
                         {answers.map(({answer}, idx) =>
                             <td 
@@ -193,7 +193,7 @@ return (
                 {questions.map((question, idx) => (
                     <tr key={idx}>
 
-                        <th scope="col"> 
+                        <th scope="col" className={adjustCell&& `py-2 px-3`}> 
                             {adjustCell? <span>{question.text}</span> : <div>{question.text}</div>} 
                         </th>
 

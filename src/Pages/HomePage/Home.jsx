@@ -1,16 +1,18 @@
 import React from 'react';
-import './Home.css';
+
+import Slider from "react-slick";
 
 // Import Components
 import MainBtn from '../../Components/MainBtn/MainBtn';
-import HeaderImg from '../../Components/HeaderImg/HeaderImg';
 import BgImg from './../../Components/BgImg/BgImg';
 import FooterLinks from '../../Components/FooterLinks/FooterLinks';
 import ImageComp from '../../Components/ImageComp/ImageComp';
 import EvidenceDesc from '../../Components/EvidenceDesc/EvidenceDesc';
+import ServiceCard from '../../Components/ServiceCard/ServiceCard';
+import TeamCards from '../../Components/TeamCards/TeamCards';
+import FeatureCards from '../../Components/FeatureCards/FeatureCards';
 
 // Import Images
-import mainImg from '../../assests/main-home.png'
 import aboutImg from '../../assests/about-left.jpg.png'
 import evidenceOne from '../../assests/evidence-1.png'
 import evidenceTwo from '../../assests/evidence-2.png'
@@ -20,32 +22,111 @@ import evidenceThree from '../../assests/evidence-3.png'
 import { evidence, homeFeatures, homeTeam, partners, serviceCards } from '../../data';
 
 // Icons
+import { SiGooglemessages } from "react-icons/si";
 import {BiRightArrowAlt} from 'react-icons/bi'
-import ServiceCard from '../../Components/ServiceCard/ServiceCard';
-import TeamCards from '../../Components/TeamCards/TeamCards';
-import FeatureCards from '../../Components/FeatureCards/FeatureCards';
 
 
+import { Link } from 'react-router-dom';
+import './Home.css';
 const Home = () => {
+
+  const settings2 = {
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    cssEase: "linear",
+    responsive: [
+    {  
+      breakpoint: 1530,
+      settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true
+      }
+
+    },
+    {
+        breakpoint: 1199,
+        settings: {
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            infinite: true,
+            autoplay: true
+        }
+    },
+    {
+        breakpoint: 992,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            infinite: true,
+            autoplay: true
+        }
+    },
+    {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true
+        }
+    },
+    {
+        breakpoint: 523,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true
+        }
+    }
+
+    ]
+}
   return (
-    <main>
+    <main className=' position-relative'>
       
-      <header className=' overflow-hidden'>
-        <HeaderImg src={mainImg}  desc= 'A NEW SYSTEMATIC APPROACH TO MAXIMIZING YOUR STUDENTSLEARNING OUTCOME' />
-      </header>
+      <figure className='main-home-img d-flex align-items-center m-0'>
+        <figcaption>
+            <h2>LEARNING OUTCOME</h2>
+            <h1>A NEW SYSTEMATIC <br/> APPROACH TO MAXIMIZING <br/> YOUR STUDENTS</h1>
+            <button> Get Started <BiRightArrowAlt className='ms-3 fs-4'/> </button>
+        </figcaption>
+      </figure>
+
+      <Link to= '/contactus'>
+          <SiGooglemessages className='contact-icon-box'/>
+      </Link>
       
       {/* Partners Section */}
       <section className='partner-home p-5 partner-home'>
 
         <h1 className='text-center mb-5'>STS Partiner</h1>
 
-        <div className="row justify-content-between p-5 gy-4">
+        <div className="row">
 
-          {partners?.map((partner, idx) =>
+          {/* {partners?.map((partner, idx) =>
           <ImageComp src={partner.img} key={idx}/>
-          )}
-          
+          )} */}
+          <Slider {...settings2}>
+                {partners?.map((partner, idx) => (
 
+                    <div className='custom-px d-flex justify-content-center align-items-center' key={idx}>
+                        
+                        <div key={idx} className="overflow-hidden custom-size position-relative">
+                            
+                            <ImageComp src={partner.img}
+                            alt= 'Our Clients'/>
+                        
+                        </div>
+
+                    </div>
+                ))}
+            </Slider>
 
         </div>
 
@@ -63,8 +144,8 @@ const Home = () => {
             <div>
               <h5 className='green-color mb-3'>About Us</h5>
               <h2 className='blue-color head-title mb-4'>Smart Teaching System</h2>
-              <p className='silver-color '>The smart education system is a scientific model and framework based on international research and studies, designed to raise the performance of professors, teachers, and educators in universities and schools, and advance education to unprecedented levels. The system has been developed, tried, tested and proven effective.</p>
-              <MainBtn shadow={false}>Read More <BiRightArrowAlt className='px-2 text-dark' /> </MainBtn>
+              <p className='silver-color mb-4'>The smart education system is a scientific model and framework based on international research and studies, designed to raise the performance of professors, teachers, and educators in universities and schools, and advance education to unprecedented levels. The system has been developed, tried, tested and proven effective.</p>
+              <button> <Link className='p-0 text-dark' to= '/expertteacher'> Get Started <BiRightArrowAlt className='ms-3 fs-4'/> </Link></button>
             </div>
 
           </div>
@@ -88,7 +169,7 @@ const Home = () => {
           
           </div>
 
-          <div className="row g-4 py-4">
+          <div className="row g-4 py-4 special-evidence-row">
 
             <div className="col-lg-4 col-md-5 custom-padding">
               <BgImg src={evidenceTwo} className='right'/>

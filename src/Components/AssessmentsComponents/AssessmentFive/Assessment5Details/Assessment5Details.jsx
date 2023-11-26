@@ -76,7 +76,7 @@ return (
 
         <div className='mb-4'></div>
 
-        <AssessmentTable Questions={ass5QuestionsPartTwo} tableName={ass5QuestionsPartTwoTitles}/>
+        <AssessmentTable Questions={ass5QuestionsPartTwo} tableName={ass5QuestionsPartTwoTitles} adjustCell={true}/>
 
         
 

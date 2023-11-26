@@ -35,7 +35,7 @@ return (
                 </div>
             </div>
 
-            {reply&& reply.map(({img, name, date, comment}, idx) =>
+            {/* {reply&& reply.map(({img, name, date, comment}, idx) =>
 
             <div className='comment-details d-flex align-items-center justify-content-end' key={idx}>
                 <div className='d-flex'>
@@ -57,7 +57,7 @@ return (
             </div>
 
 
-            )}
+            )} */}
         </>
         )}
     </div>

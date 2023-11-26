@@ -47,7 +47,7 @@ const Login = ({ saveUserData }) => {
     //   }
     console.log (values)
     setLoading(false)
-  }
+}
 
     let validationSchema = Yup.object({
         email: Yup.string().required('Email is Required').email('Invalid email address *exemple@yyy.zzz'),

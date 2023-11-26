@@ -18,12 +18,18 @@
     width: 17%;
 }
 
+.ass-table .W-22{
+    width: 22
+}
+
+
+
 @media screen and (min-width: 1200px) { 
     .ass-table .W-60{
         width: 60%  !important;
     }
-    .ass-table .W-28{
-        width: 28% !important;
+    .ass-table .W-23{
+        width: 23% !important;
     }
     .ass-table .W-3{
         width: 3% !important;
@@ -33,6 +39,12 @@
 @media screen and (min-width: 1400px) {
     .ass-table .W-18{
         width: 18% !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ass-table .W-22{
+        width: 22% !important;
     }
 }
 

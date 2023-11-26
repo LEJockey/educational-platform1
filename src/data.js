@@ -200,7 +200,23 @@ export const partners = [
     },
     {
         img: part5
-    }
+    },
+    {
+        img: part1
+    },
+    {
+        img: part2
+    },
+    {
+        img: part3
+    },
+    {
+        img: part4
+    },
+    {
+        img: part5
+    },
+    
 ]
 
 
@@ -884,52 +900,68 @@ export const recentBlogs = [
 
 export const expertTeacherLinks = [
     {
-        link: 'Home'
+        link: 'Home',
+        path: '/'
     },
     {
-        link: 'Smart Teaching System'
+        link: 'Smart Teaching System',
+        path: '/login'
     },
     {
-        link: 'Factors Affecting Student Achievement'
+        link: 'Factors Affecting Student Achievement',
+        path: '/register'
     },
     {
-        link: 'Expert Teacher'
+        link: 'Expert Teacher',
+        Path: '/expertteacher'
     },
     {
-        link: 'Academy'
+        link: 'Academy',
+        path: '/expertteachingacademy'
     },
     {
-        link: 'Individual Professional Development Plan'
+        link: 'Individual Professional Development Plan',
+        path: '/'
     },
     {
-        link: 'Assessments'
+        link: 'Assessments',
+        path: '/'
     },
     {
-        link: 'Classroom Observation Instruments'
+        link: 'Classroom Observation Instruments',
+        path: '/ClassroomObservationInstruments'
     },
     {
-        link: 'Students Rating their Teachers'
+        link: 'Students Rating their Teachers',
+        path: '/StudentsRatingtheirTeachers'
     },
     {
-        link: 'Simplified Teachers Competency Assessment'
+        link: 'Simplified Teachers Competency Assessment',
+        path: '/SimplifiedTeachersCompetencyAssessment'
     },
     {
-        link: 'Teacher Competency Assessment'
+        link: 'Teacher Competency Assessment',
+        path: '/TeacherCompetencyAssessment'
     },
     {
-        link: 'Resources'
+        link: 'Resources',
+        path: '/'
     },
     {
-        link: 'Articles'
+        link: 'Articles',
+        path: '/'
     },
     {
-        link: 'Library'
+        link: 'Library',
+        path: '/'
     },
     {
-        link: 'Introduction to STS (Arabic)'
+        link: 'Introduction to STS (Arabic)',
+        path: '/'
     },
     {
-        link: 'Membership'
+        link: 'Membership',
+        path: '/membership'
     }
 ]
 
@@ -1102,27 +1134,63 @@ export const teachingAcademyCards = [
 ]
 
 export const blogsContent = [
-    {
+    {   
+        id: 1,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'Moataz',
         commentsNo: 50,
         likesNo: 200,
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus zzzzzzzzzzz eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
         day: 18,
         month: 'Nov'
     },
-    {
+    {   
+        id: 2,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'Mohamed',
         commentsNo: 50,
         likesNo: 200,
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus eeeeeeeeeee architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 17,
+        month: 'Nov'
+    },
+    {   
+        id: 3,
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus nnnnkkkkk architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
         day: 16,
         month: 'Nov'
     },
-    {
+    {   
+        id: 4,
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 15,
+        month: 'Nov'
+    },
+    {   
+        id: 5,
+        img: blog1,
+        title: 'Earn good money and make you very successful',
+        name: 'AbdelRahman',
+        commentsNo: 23,
+        likesNo: 104,
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
+        day: 14,
+        month: 'Nov'
+    },
+    {   
+        id: 6,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'AbdelRahman',
@@ -1132,74 +1200,48 @@ export const blogsContent = [
         day: 13,
         month: 'Nov'
     },
-    {
+    {   
+        id: 7,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'AbdelRahman',
         commentsNo: 23,
         likesNo: 104,
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
+        day: 12,
         month: 'Nov'
     },
-    {
+    {   
+        id: 8,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'AbdelRahman',
         commentsNo: 23,
         likesNo: 104,
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
+        day: 11,
         month: 'Nov'
     },
-    {
+    {   
+        id: 9,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'AbdelRahman',
         commentsNo: 23,
         likesNo: 104,
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
+        day: 10,
         month: 'Nov'
     },
-    {
+    {   
+        id: 10,
         img: blog1,
         title: 'Earn good money and make you very successful',
         name: 'AbdelRahman',
         commentsNo: 23,
         likesNo: 104,
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
-        month: 'Nov'
-    },
-    {
-        img: blog1,
-        title: 'Earn good money and make you very successful',
-        name: 'AbdelRahman',
-        commentsNo: 23,
-        likesNo: 104,
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
-        month: 'Nov'
-    },
-    {
-        img: blog1,
-        title: 'Earn good money and make you very successful',
-        name: 'AbdelRahman',
-        commentsNo: 23,
-        likesNo: 104,
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
-        month: 'Nov'
-    },
-    {
-        img: blog1,
-        title: 'Earn good money and make you very successful',
-        name: 'AbdelRahman',
-        commentsNo: 23,
-        likesNo: 104,
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt blanditiis repellendus nostrum veniam, explicabo at, culpa vitae, odio autem maxime laudantium eaque adipisci commodi ducimus soluta architecto eum deleniti. Deserunt architecto vel dolorem omnis, est sint aliquid, ullam repellendus ipsam dolores aspernatur, delectus maxime voluptatem? Adipisci veritatis earum est nesciunt!',
-        day: 13,
+        day: 9,
         month: 'Nov'
     },
 ]

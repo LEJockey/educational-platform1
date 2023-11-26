@@ -9,6 +9,7 @@
 
 .register-img{
     border-radius: 1.875rem 0 0 1.875rem;
+    overflow: hidden;
 }
 .register-forms{
     border-radius: 0 1.875rem 1.875rem 0 !important;

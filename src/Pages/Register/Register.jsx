@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import reImg from "../../assests/Register/hero image.png";
 import ImageComp from "../../Components/ImageComp/ImageComp";
 import useLangContext from "../../Hooks/useLangContext";
-import "./Register.css";
 import SingleStepForm from "../../Components/RegisterComponents/SinleStepForm/SingleStepForm";
 import FounderStepForm from '../../Components/RegisterComponents/FounderStepForm/FounderStepForm';
 
+import "./Register.css";
 const Register = () => {
   const { lang, langs } = useLangContext();
   const [singleForm, setSingleForm] = useState(true);

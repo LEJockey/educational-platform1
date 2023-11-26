@@ -35,11 +35,11 @@
 }
 
 .service-card p{
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1.7rem;
+    font-size: 1rem !important;
+    font-style: normal !important; 
+    font-weight: 400 !important;
+    line-height: normal !important;
+    margin-bottom: 1.7rem !important;
     color: var(--darkGray-color);
     transition: all .3s;
 }

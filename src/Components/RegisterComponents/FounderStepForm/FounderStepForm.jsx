@@ -133,25 +133,25 @@ const FounderStepForm = () => {
     formik.setFieldValue("state", ""); // Set to an empty string or any other default value
   }, [formik.values.country]);
 
-  const handleNextStep = () => {
-    setTransitionClass("slide-up");
-    setTimeout(() => {
-      setStep((prevStep) => prevStep + 1);
-      setTransitionClass("");
-    }, 500);
-  };
+  // const handleNextStep = () => {
+  //   setTransitionClass("slide-up");
+  //   setTimeout(() => {
+  //     setStep((prevStep) => prevStep + 1);
+  //     setTransitionClass("");
+  //   }, 500);
+  // };
 
-  const handlePrevStep = () => {
-    setTransitionClass("slide-down");
-    setTimeout(() => {
-      setStep((prevStep) => prevStep - 1);
-      setTransitionClass("");
-    }, 500);
-  };
+  // const handlePrevStep = () => {
+  //   setTransitionClass("slide-down");
+  //   setTimeout(() => {
+  //     setStep((prevStep) => prevStep - 1);
+  //     setTransitionClass("");
+  //   }, 500);
+  // };
   return (
     <>
       <form onSubmit={formik.handleSubmit} className={`multi-form ${step} ${transitionClass}`}>
-        {step === 1 && (
+        
           <div className="col-lg-8 col-md-10 mx-auto px-md-0 px-4 step step-1">
             {/* Name Input */}
             <div className="form-floating name-input mt-5 mb-4">
@@ -252,29 +252,7 @@ const FounderStepForm = () => {
               ) : null}
             </div>
 
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <button className="modal-btn opacity-0" disabled type="button">
-                Prev
-              </button>
-
-              <div className="active-rec"></div>
-              <div className="rec"></div>
-
-              <button
-                className="modal-btn"
-                type="button"
-                onClick={handleNextStep}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        )}
-
-        {step === 2 && (
-          <div className="col-lg-8 col-md-10 mx-auto px-md-0 px-4 step step-2">
-            {/* Password Input */}
-            <div className="form-floating mt-5 mb-4 password ">
+            <div className="form-floating mb-4">
               <input
                 type={showPassword ? 'text' : 'password'}
                 className="form-control"
@@ -427,18 +405,8 @@ const FounderStepForm = () => {
             </div>
 
 
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <button
-                className="modal-btn "
-                type="button"
-                onClick={handlePrevStep}
-              >
-                Back
-              </button>
-
-              <div className="rec"></div>
-              <div className="active-rec"></div>
-
+            <div className="d-flex justify-content-end align-items-center mb-4">
+              
               {/* <ConfirmRegister formik={formik} loading={loading} name={formik.values.name}/> */}
               {loading ? (
                 <button className="modal-btn" type="button">
@@ -457,8 +425,12 @@ const FounderStepForm = () => {
                 </button>
               )}
             </div>
+
+            
           </div>
-        )}
+        
+
+        
       </form>
 
       {/* Confirm Modal */}

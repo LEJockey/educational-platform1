@@ -10,6 +10,10 @@
     color: #191B1E;
     background-color: #F5F5FE;
     /* margin-bottom: 3.76rem; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../../assests/BlogDetails/main-img.jpeg);
 }
 
 .section-bg h1{

@@ -6,14 +6,23 @@
     text-align: center;
     position: relative;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-style: normal;
     line-height: normal;
     color: var(--darkgreen-color);
 }
 
+.ass2-table td{
+    color: var(--Black, #0F0F0F);
+    font-family: Arial;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .ass2-table thead th{
-    padding: 1.5rem 1rem;
+    padding: 1.5em 1em;
 }
 
 .ass2-table th div{
@@ -39,6 +48,12 @@
 
 .ass2-table tr{
     padding: .87rem .67rem;
+}
+
+@media screen and (max-width: 500px) {
+    .ass2-table{
+        font-size: 12px;
+    }
 }
 
 

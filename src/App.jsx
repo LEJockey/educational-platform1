@@ -51,13 +51,13 @@ function App() {
       {path: 'contactus', element: <React.Suspense fallback={<Loading/>}> <LazyContactUS saveUserData ={saveUserData}/> </React.Suspense>},
       {path: 'membership', element: <React.Suspense fallback={<Loading/>}> <LazyBeAMember saveUserData ={saveUserData}/> </React.Suspense>},
       {path: 'blogs', element: <React.Suspense fallback={<Loading/>}> <LazyBlogsPage saveUserData ={saveUserData}/> </React.Suspense>},
-      {path: 'blogdetails', element: <React.Suspense fallback={<Loading/>}> <LazyBlogDetails saveUserData ={saveUserData}/> </React.Suspense>},
+      {path: 'blogdetails/:id', element: <React.Suspense fallback={<Loading/>}> <LazyBlogDetails saveUserData ={saveUserData}/> </React.Suspense>},
       {path: 'expertteacher', element: <React.Suspense fallback={<Loading/>}> <LazyExpertTeacher saveUserData ={saveUserData}/> </React.Suspense>},
       {path: 'expertteachingacademy', element: <React.Suspense fallback={<Loading/>}> <LazyExpertTeachingAcademy saveUserData ={saveUserData}/> </React.Suspense>},
-      {path: 'assessment-two', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentTwo saveUserData ={saveUserData}/> </React.Suspense>},
-      {path: 'assessment-three', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentThree saveUserData ={saveUserData}/> </React.Suspense>},
-      {path: 'assessment-four', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentFour saveUserData ={saveUserData}/> </React.Suspense>},
-      {path: 'assessment-five', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentFive saveUserData ={saveUserData}/> </React.Suspense>},
+      {path: 'TeacherCompetencyAssessment', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentTwo saveUserData ={saveUserData}/> </React.Suspense>},
+      {path: 'ClassroomObservationInstruments', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentThree saveUserData ={saveUserData}/> </React.Suspense>},
+      {path: 'SimplifiedTeachersCompetencyAssessment', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentFour saveUserData ={saveUserData}/> </React.Suspense>},
+      {path: 'StudentsRatingtheirTeachers', element: <React.Suspense fallback={<Loading/>}> <LazyAssessmentFive saveUserData ={saveUserData}/> </React.Suspense>},
       {path: '*', element: <NotFound/>}
   ]},
 ])

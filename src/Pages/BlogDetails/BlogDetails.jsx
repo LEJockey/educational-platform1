@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import BlogContent from '../../Components/BlogDetailsComponents/BlogContent/BlogContent';
 import Tags from './../../Components/BlogDetailsComponents/Tags/Tags';
 import Comments from '../../Components/Comments/Comments';
@@ -16,6 +17,9 @@ import { blogsContent } from '../../data';
 import './BlogDetails.css'
 
 const BlogDetails = () => {
+
+    const { id } = useParams();
+
 return (
     <section className='blog-details'>
 
@@ -39,7 +43,9 @@ return (
                 
                 <div className="col-lg-8">
 
-                    <BlogContent {...blogsContent[0]}/>
+                    {/* <BlogContent {...blogsContent[id]}/> */}
+                    <BlogContent id={blogsContent[id-1].id} {...blogsContent[id-1]} />
+
 
                     <Tags/>
 

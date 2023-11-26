@@ -12,6 +12,13 @@
     padding-right: 3.75rem;
 }
 
+@media screen and (max-width: 768px) {
+    .main-expert-teacher-img figcaption{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .main-expert-teacher-img h1{
     font-size: 3rem;
     font-weight: 700;
